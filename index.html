@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perceptor demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js" defer></script>
+    <div id="perceptor-input"></div>
+    <input type="button" value="Execute" id="execute" class="newline" onclick="executeAlgorithm(selectedGrid, weights, 0.25, desiredOutput)"/>
+    <input type="button" value="Reset" id="reset" onclick="reset()"/>
+    <br />
+    <input type="checkbox" id="desired" class="newline" onchange="{desiredOutput = !desiredOutput}" />
+    Turn on if you want a circle
+    <br/>
+    <input type="checkbox" id="weights" class="newline" onchange="weightshandler()" />
+    Click to see the weight map
+</body>
+</html>
